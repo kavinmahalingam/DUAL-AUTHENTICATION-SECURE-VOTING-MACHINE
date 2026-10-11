@@ -9,11 +9,11 @@ Status: Academic hardware prototype in development
 
 Objectives:
 
-Implement RFID-based voter identification.
-Add fingerprint verification as a second authentication factor.
-Prevent repeat voting within the prototype.
-Maintain election totals across power cycles using EEPROM.
-Display dummy voter information, date and time.
-Provide administrative access to election results.
-Demonstrate deliberate election-data clearing.
-Avoid storing a voter-to-candidate mapping.
+1.Implement RFID-based voter identification.
+2.Add fingerprint verification as a second authentication factor.
+3.Prevent repeat voting within the prototype.
+4.Maintain election totals across power cycles using EEPROM.
+5.Display dummy voter information, date and time.
+6.Provide administrative access to election results.
+7.Demonstrate deliberate election-data clearing.
+8.Avoid storing a voter-to-candidate mapping.
