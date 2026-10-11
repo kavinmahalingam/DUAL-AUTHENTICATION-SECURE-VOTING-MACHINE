@@ -7,20 +7,13 @@ Platform: STM32F103C8T6 and Arduino UNO R3
 Development environment: Arduino IDE
 Status: Academic hardware prototype in development
 
-Objectives
+Objectives:
 
 Implement RFID-based voter identification.
-
 Add fingerprint verification as a second authentication factor.
-
 Prevent repeat voting within the prototype.
-
 Maintain election totals across power cycles using EEPROM.
-
 Display dummy voter information, date and time.
-
 Provide administrative access to election results.
-
 Demonstrate deliberate election-data clearing.
-
 Avoid storing a voter-to-candidate mapping.
