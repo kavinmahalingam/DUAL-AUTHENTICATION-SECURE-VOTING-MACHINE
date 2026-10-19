@@ -21,4 +21,4 @@ Objectives:
 
 6,Demonstrate deliberate election-data clearing.
 
-8.Avoid storing a voter-to-candidate mapping.
+7.Avoid storing a voter-to-candidate mapping.
