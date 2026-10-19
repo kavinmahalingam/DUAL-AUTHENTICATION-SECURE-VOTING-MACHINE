@@ -19,6 +19,6 @@ Objectives:
 
 5.Provide administrative access to election results.
 
-7.Demonstrate deliberate election-data clearing.
+6,Demonstrate deliberate election-data clearing.
 
 8.Avoid storing a voter-to-candidate mapping.
