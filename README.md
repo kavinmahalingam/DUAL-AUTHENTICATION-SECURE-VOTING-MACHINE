@@ -17,8 +17,6 @@ Objectives:
 
 4.Maintain election totals across power cycles using EEPROM.
 
-5.Display dummy voter information, date and time.
-
 6.Provide administrative access to election results.
 
 7.Demonstrate deliberate election-data clearing.
