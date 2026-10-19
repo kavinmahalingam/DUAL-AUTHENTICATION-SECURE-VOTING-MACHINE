@@ -1,4 +1,4 @@
-The Dual-Authentication Secure Voting System uses two microcontrollers to demonstrate a two-stage voter authentication process. An STM32F103C8T6 Blue Pill verifies the registered RFID card, while an Arduino UNO R3 communicates with an R307 fingerprint sensor to perform biometric verification before allowing candidate selection.
+The Dual-Authentication Secure Voting System uses two microcontrollers to demonstrate a two-stage voter authentication process. An ESP32 verifies the registered RFID card and with an R307 fingerprint sensor to perform biometric verification before allowing candidate selection.
 
 The project explores authentication, embedded systems, persistent data storage, and privacy-aware voting workflows.
 
