@@ -5,7 +5,9 @@ The integrity of democratic processes hinges on the trustworthiness of electoral
 Index Terms—Electronic Voting Machine (EVM), Dual-Factor Authentication, ESP32, STM32F103C8, RFID, Biometric Verification, Fingerprint Authentication, Embedded Security, UART Communication, EEPROM Persistence, TFT Display, Election Integrity, Voter Privacy.
 
 I. INTRODUCTION
+
 A. Background and Motivation
+
 Electronic voting has emerged as a cornerstone technology in modern democratic elections, offering advantages in efficiency, accessibility, and rapid tabulation of results [1]. Since their introduction in the late 20th century, Electronic Voting Machines (EVMs) have been deployed at national scale in countries such as India, Brazil, and the Philippines, and piloted extensively in the United States and Europe [2]. Despite these advantages, the adoption of EVMs is often accompanied by public skepticism and legal challenges rooted in legitimate concerns about cybersecurity, tamper-resistance, and verifiability [3], [4].
 
 Traditional EVMs, including many commercially deployed Direct Recording Electronic (DRE) systems, typically rely on a single authentication factor — most commonly a password, a mechanical key, or a single RFID card [5]. A single point of trust is inherently fragile: a stolen or cloned card, a shared password, or a coerced insider is sufficient to compromise the system. Furthermore, physical security alone cannot guarantee that an authenticated voter is the legitimate cardholder rather than an impersonator.
