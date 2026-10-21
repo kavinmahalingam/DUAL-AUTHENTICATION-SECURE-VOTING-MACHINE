@@ -14,7 +14,8 @@ Traditional EVMs, including many commercially deployed Direct Recording Electron
 
 Multi-factor authentication (MFA) has long been established in high-security domains such as banking, cloud computing, and physical access control [6]. The U.S. National Institute of Standards and Technology (NIST) Special Publication 800-63B recommends MFA for all systems requiring substantial identity assurance, ideally combining two or more of the categories: something you know, something you have, and something you are [7]. Applying these principles to EVMs is both theoretically sound and practically feasible with modern low-cost microcontrollers and sensors.
 
-B. Problem Statement
+B. Problem Statement:
+
 Conventional low-cost EVMs suffer from several systemic weaknesses:
 
 Single-Factor Vulnerability: A lost, stolen, or cloned credential alone is sufficient to cast a vote.
