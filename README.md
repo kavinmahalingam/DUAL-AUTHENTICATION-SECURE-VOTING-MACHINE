@@ -52,11 +52,15 @@ C. Objectives:
 
 D. Contributions:
 
-The principal contributions of this work are:
+1.The principal contributions of this work are:
 
-A reference architecture for a distributed, dual-factor EVM suitable for classroom, campus, or organizational elections.
+2.A reference architecture for a distributed, dual-factor EVM suitable for classroom, campus, or organizational elections.
 
-A concrete hardware and software implementation validated on real hardware.
+3.A concrete hardware and software implementation validated on real hardware.
+
+E. Organization:
+
+Section II reviews related work and background. Section III describes the system architecture. Section IV provides hardware design and pin-level interfacing. Section V details the software methodology and security logic. Section VI analyzes security threats and mitigations. Section VII presents results and discussion. Section VIII concludes with future scope.
 
 A security analysis identifying attack vectors and corresponding mitigations.
 
