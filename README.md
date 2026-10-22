@@ -47,7 +47,9 @@ C. Objectives:
 7.Implement robust security logic including session cancellation, confirm-to-reset, and result-viewing controls.
 
 8.Validate the system through functional, fault-injection, and reliability testing.
-D. Contributions
+
+D. Contributions:
+
 The principal contributions of this work are:
 
 A reference architecture for a distributed, dual-factor EVM suitable for classroom, campus, or organizational elections.
