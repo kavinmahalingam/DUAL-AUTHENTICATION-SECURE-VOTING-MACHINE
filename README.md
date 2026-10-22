@@ -29,19 +29,21 @@ Poor Voter Privacy: Inadequate cancel mechanisms force voters to complete a vote
 Data Loss on Power Failure: Volatile-only vote storage risks losing ballots during power interruption.
 
 Accidental Reset Risk: A single mis-triggered button can erase all recorded results.
-C. Objectives
-This project addresses each of the above weaknesses through the following design objectives:
 
-Design a dual-factor authentication EVM where voter identity requires both possession (RFID card) and biometrics (fingerprint).
+C. Objectives:
 
-Implement a distributed two-module architecture that separates authentication from voting, thereby eliminating single points of failure and improving auditability.
+1.This project addresses each of the above weaknesses through the following design objectives:
 
-Ensure 24-hour duplicate-vote prevention through persistent vote logging.
+2.Design a dual-factor authentication EVM where voter identity requires both possession (RFID card) and biometrics (fingerprint).
 
-Provide non-volatile vote storage in EEPROM to guarantee data durability.
+3.Implement a distributed two-module architecture that separates authentication from voting, thereby eliminating single points of failure and improving auditability.
 
-Deliver a user-friendly graphical interface via dual TFT LCD displays with animations and confirmation screens.
+4.Ensure 24-hour duplicate-vote prevention through persistent vote logging.
 
-Implement robust security logic including session cancellation, confirm-to-reset, and result-viewing controls.
+5.Provide non-volatile vote storage in EEPROM to guarantee data durability.
 
-Validate the system through functional, fault-injection, and reliability testing.
+6.Deliver a user-friendly graphical interface via dual TFT LCD displays with animations and confirmation screens.
+
+7.Implement robust security logic including session cancellation, confirm-to-reset, and result-viewing controls.
+
+8.Validate the system through functional, fault-injection, and reliability testing.
