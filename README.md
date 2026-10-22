@@ -47,3 +47,15 @@ C. Objectives:
 7.Implement robust security logic including session cancellation, confirm-to-reset, and result-viewing controls.
 
 8.Validate the system through functional, fault-injection, and reliability testing.
+D. Contributions
+The principal contributions of this work are:
+
+A reference architecture for a distributed, dual-factor EVM suitable for classroom, campus, or organizational elections.
+
+A concrete hardware and software implementation validated on real hardware.
+
+A security analysis identifying attack vectors and corresponding mitigations.
+
+Empirical performance data on authentication latency, false-acceptance rate, false-rejection rate, and persistence reliability.
+
+A modular baseline for future research in blockchain-verified and cloud-aggregated voting.
