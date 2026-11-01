@@ -47,4 +47,10 @@ The project covers the design and integration of a small-scale, locally operated
 The system uses a locally enrolled voter set and a demonstration ballot. The scope includes hardware testing and software debugging under laboratory conditions. It does not include deployment in public elections, legal voter registration, certified biometric verification, or independent election auditing.
 The prototype’s UART authorization message is plain text. It does not include cryptographic message authentication or replay protection. The system therefore demonstrates a functional embedded workflow, not a complete secure-election solution. These limitations are also noted in the project’s source report. 
 
+1.5 Significance of the Project
+
+The project provides practical experience in integrating several embedded subsystems into a coordinated application. The authentication unit combines RFID, fingerprint sensing, display control, and non-volatile data access. The voting unit handles authorization reception, candidate input, vote totals, and result display.
+Separating the two functions also creates a useful engineering exercise in defining an interface between independently programmed microcontrollers. The UART link must use compatible signal connections, baud rate, message format, and state transitions. This makes the project relevant to embedded firmware development, hardware integration, and system-level debugging.
+
+
 
