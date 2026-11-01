@@ -41,3 +41,10 @@ Objectives
 8.	Test the sensor interfaces, serial communication, and voting workflow.
 9.	Identify security and reliability limitations that require further development.
 
+1.4 Scope of the Project
+
+The project covers the design and integration of a small-scale, locally operated voting prototype. It includes RFID identification, fingerprint matching, inter-controller UART communication, candidate selection, vote tallying, and display feedback.
+The system uses a locally enrolled voter set and a demonstration ballot. The scope includes hardware testing and software debugging under laboratory conditions. It does not include deployment in public elections, legal voter registration, certified biometric verification, or independent election auditing.
+The prototype’s UART authorization message is plain text. It does not include cryptographic message authentication or replay protection. The system therefore demonstrates a functional embedded workflow, not a complete secure-election solution. These limitations are also noted in the project’s source report. 
+
+
