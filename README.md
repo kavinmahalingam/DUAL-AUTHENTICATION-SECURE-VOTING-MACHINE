@@ -28,6 +28,7 @@ The system also requires predictable behavior when a card is unregistered, a fin
 Aim
 
 To design and implement an educational electronic voting prototype that uses RFID and fingerprint verification to control access to a separate voting unit.
+
 Objectives
 
 1.	Interface an MFRC522 RFID reader with the ESP32 for card identification.
