@@ -22,3 +22,21 @@ The project is a laboratory prototype for studying embedded authentication, sens
 A basic electronic voting prototype may accept a vote after a single credential check or may provide limited control over repeated participation. A card-only approach depends on possession of the card, while a fingerprint-only approach may lack a separate first-stage voter identifier. A prototype also requires a defined communication process between voter verification and ballot control.
 The project addresses these design issues by implementing a two-stage authentication process. The ESP32 first validates the RFID identifier against locally stored voter records. It then checks the fingerprint template associated with that record. Only after both checks succeed does it transmit an authorization message to the STM32 voting unit.
 The system also requires predictable behavior when a card is unregistered, a fingerprint does not match, a sensor is unavailable, a user cancels the session, or communication fails. These cases must be considered as part of the design rather than treating successful authentication as the only possible operating condition.
+
+1.3 Aim and Objectives
+
+Aim
+
+To design and implement an educational electronic voting prototype that uses RFID and fingerprint verification to control access to a separate voting unit.
+Objectives
+
+1.	Interface an MFRC522 RFID reader with the ESP32 for card identification.
+2.	Store and retrieve authorized voter records using non-volatile storage.
+3.	Interface an R307 fingerprint sensor with the ESP32 and verify the returned fingerprint template identifier.
+4.	Provide user prompts and authentication status through an ILI9341 TFT display.
+5.	Establish UART communication between the ESP32 authentication unit and STM32 voting unit.
+6.	Enable the STM32 voting interface only after receiving an accepted authorization message.
+7.	Implement candidate selection and candidate-wise vote counting.
+8.	Test the sensor interfaces, serial communication, and voting workflow.
+9.	Identify security and reliability limitations that require further development.
+
