@@ -54,6 +54,44 @@ Separating the two functions also creates a useful engineering exercise in defin
 
 LITERATURE REVIEW 
 
+Electronic voting systems have become an important area of research due to the 
+increasing need for secure, reliable, and efficient election processes. Existing studies 
+have focused on improving voter authentication, vote recording, result accuracy, and 
+election transparency. Different hardware and software approaches have been 
+investigated to minimize unauthorized access and improve the reliability of electronic 
+voting operations [1], [2]. 
+ 
+Security is one of the major considerations in electronic voting systems. Research has 
+explored cryptographic techniques, distributed consensus mechanisms, and secure 
+authorization methods to protect election records and ensure that voting results are 
+generated from valid transactions. These approaches highlight the importance of 
+controlling access to voting operations and maintaining the integrity of recorded results 
+[1]. Hardware-based voting architectures have also been developed using 
+programmable logic and embedded processing platforms to perform candidate 
+selection, vote validation, and result calculation [2]. 
+ 
+In addition to security, election integrity and independent verification are important 
+factors in electronic voting. Various auditing techniques, including pre-election testing, 
+post-election auditing, parallel testing, and manual verification, have been studied to 
+identify possible errors and security vulnerabilities. Voter-verifiable paper audit trails 
+have also been introduced to provide an additional method of checking electronically 
+recorded votes [3], [4]. These approaches demonstrate that accurate vote counting 
+should be supported by proper verification and auditing procedures. 
+ 
+User confidence and acceptance also influence the successful adoption of electronic 
+voting technologies. Studies have examined the relationship between perceived 
+security, overall trust, system performance, and public acceptance. These findings 
+indicate that electronic voting systems should provide reliable operation, 
+understandable user interaction, and confidence in the voting process [5]. 
+ 
+Based on the existing research, the proposed project focuses on developing a dual
+authentication electronic voting prototype using RFID and fingerprint verification. The 
+system uses an ESP32 microcontroller for voter authentication and an STM32 
+microcontroller for candidate selection and vote counting. By combining two 
+authentication methods and separating authentication from voting operations, the 
+project explores a practical embedded-system approach to controlling access to the 
+voting process.
+
 
 
 
