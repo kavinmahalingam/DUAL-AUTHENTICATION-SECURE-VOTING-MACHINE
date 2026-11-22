@@ -94,5 +94,26 @@ voting process.
 
 2.1 Research Gap 
 
+Existing electronic voting systems face practical challenges related to implementation 
+complexity, hardware requirements, voter authentication, and result verification. 
+Cryptography-based systems offer advanced security but require complex protocols and 
+infrastructure [1]. FPGA-based systems need specialized hardware and HDL 
+development [2], while optical-scan and VVPAT-based systems involve additional 
+paper-based auditing and verification mechanisms [3], [4]. Some studies also focus 
+more on public trust and acceptance than on practical embedded hardware 
+implementation [5]. 
+ 
+To address these practical considerations, the proposed system uses RFID and 
+fingerprint-based dual authentication with ESP32 and STM32 microcontrollers. The 
+ESP32 verifies voter identity using an RFID card and an R307 fingerprint sensor, while 
+the STM32 handles candidate selection and vote counting through UART 
+communication. An ILI9341 TFT display provides system status and user feedback. 
+ 
+Therefore, the project presents a cost-conscious and modular embedded-system 
+prototype that combines two-stage voter authentication with a separate voting unit. 
+However, it does not include cryptographic UART authentication, replay protection, 
+VVPAT, or independent election auditing, and is intended for academic demonstration 
+rather than real-world election deployment. 
+
 
 
