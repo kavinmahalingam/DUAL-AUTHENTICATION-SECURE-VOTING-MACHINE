@@ -17,13 +17,7 @@ A single identification method may not be sufficient for a demonstration system 
 This project investigates a dual-authentication workflow using an ESP32 and an STM32F103C8 microcontroller. The ESP32 performs RFID and fingerprint checks, while the STM32 manages candidate selection and vote counting. The division of responsibilities is intended to make the system easier to develop, test, and maintain.
 The project is a laboratory prototype for studying embedded authentication, sensor interfacing, serial communication, display control, and voting-state management. It is not intended to replace certified election equipment.
 
-1.2 Problem Statement
-
-A basic electronic voting prototype may accept a vote after a single credential check or may provide limited control over repeated participation. A card-only approach depends on possession of the card, while a fingerprint-only approach may lack a separate first-stage voter identifier. A prototype also requires a defined communication process between voter verification and ballot control.
-The project addresses these design issues by implementing a two-stage authentication process. The ESP32 first validates the RFID identifier against locally stored voter records. It then checks the fingerprint template associated with that record. Only after both checks succeed does it transmit an authorization message to the STM32 voting unit.
-The system also requires predictable behavior when a card is unregistered, a fingerprint does not match, a sensor is unavailable, a user cancels the session, or communication fails. These cases must be considered as part of the design rather than treating successful authentication as the only possible operating condition.
-
-1.3 Aim and Objectives
+1.2 Aim and Objectives
 
 Aim
 
@@ -41,13 +35,13 @@ Objectives
 8.	Test the sensor interfaces, serial communication, and voting workflow.
 9.	Identify security and reliability limitations that require further development.
 
-1.4 Scope of the Project
+1.3 Scope of the Project
 
 The project covers the design and integration of a small-scale, locally operated voting prototype. It includes RFID identification, fingerprint matching, inter-controller UART communication, candidate selection, vote tallying, and display feedback.
 The system uses a locally enrolled voter set and a demonstration ballot. The scope includes hardware testing and software debugging under laboratory conditions. It does not include deployment in public elections, legal voter registration, certified biometric verification, or independent election auditing.
 The prototype’s UART authorization message is plain text. It does not include cryptographic message authentication or replay protection. The system therefore demonstrates a functional embedded workflow, not a complete secure-election solution. These limitations are also noted in the project’s source report. 
 
-1.5 Significance of the Project
+1.4 Significance of the Project
 
 The project provides practical experience in integrating several embedded subsystems into a coordinated application. The authentication unit combines RFID, fingerprint sensing, display control, and non-volatile data access. The voting unit handles authorization reception, candidate input, vote totals, and result display.
 Separating the two functions also creates a useful engineering exercise in defining an interface between independently programmed microcontrollers. The UART link must use compatible signal connections, baud rate, message format, and state transitions. This makes the project relevant to embedded firmware development, hardware integration, and system-level debugging.
