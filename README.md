@@ -52,5 +52,8 @@ The prototype’s UART authorization message is plain text. It does not include 
 The project provides practical experience in integrating several embedded subsystems into a coordinated application. The authentication unit combines RFID, fingerprint sensing, display control, and non-volatile data access. The voting unit handles authorization reception, candidate input, vote totals, and result display.
 Separating the two functions also creates a useful engineering exercise in defining an interface between independently programmed microcontrollers. The UART link must use compatible signal connections, baud rate, message format, and state transitions. This makes the project relevant to embedded firmware development, hardware integration, and system-level debugging.
 
+LITERATURE REVIEW 
+
+
 
 
