@@ -115,5 +115,7 @@ However, it does not include cryptographic UART authentication, replay protectio
 VVPAT, or independent election auditing, and is intended for academic demonstration 
 rather than real-world election deployment. 
 
+2.2 Problem Statement 
+
 
 
