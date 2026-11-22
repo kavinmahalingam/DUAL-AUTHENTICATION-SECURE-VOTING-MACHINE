@@ -92,6 +92,7 @@ authentication methods and separating authentication from voting operations, the
 project explores a practical embedded-system approach to controlling access to the 
 voting process.
 
+2.1 Research Gap 
 
 
 
