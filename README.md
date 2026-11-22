@@ -117,5 +117,22 @@ rather than real-world election deployment.
 
 2.2 Problem Statement 
 
+A basic electronic voting prototype may accept a vote after a single credential check or 
+may provide limited control over repeated participation. A card-only approach depends 
+on possession of the card, while a fingerprint-only approach may lack a separate first
+stage voter identifier. A prototype also requires a defined communication process 
+between voter verification and ballot control. 
+ 
+The project addresses these design issues by implementing a two-stage authentication 
+process. The ESP32 first validates the RFID identifier against locally stored voter 
+records. It then checks the fingerprint template associated with that record. Only after 
+both checks succeed does it transmit an authorization message to the STM32 voting 
+unit. 
+ 
+The system also requires predictable behavior when a card is unregistered, a fingerprint 
+does not match, a sensor is unavailable, a user cancels the session, or communication 
+fails. These cases must be considered as part of the design rather than treating 
+successful authentication as the only possible operating condition. 
+
 
 
